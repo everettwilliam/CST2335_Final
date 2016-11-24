@@ -16,7 +16,9 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent">
     </ListView>
 
 </RelativeLayout>
