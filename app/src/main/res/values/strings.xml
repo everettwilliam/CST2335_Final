@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Automobile</string>
+    <string name="title_activity_menu_option_detail">MenuOptionDetailActivity</string>
 </resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/start_lg"
+        android:background="@color/windowBackground"
+        android:id="@+id/btn_start"
+        android:contentDescription="start button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp" />
+
+    <TextView
+        android:text="Engine Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:id="@+id/textStart"
+        android:layout_above="@+id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/textRunning"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
