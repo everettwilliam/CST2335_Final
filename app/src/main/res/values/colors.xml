@@ -6,4 +6,5 @@
     <color name="windowBackground">#0c0b1e</color>
     <color name="navigationBarColor">#000000</color>
     <color name="textColorPrimary">#ffffff</color>
+    <color name="random">#1e1c47</color>
 </resources>

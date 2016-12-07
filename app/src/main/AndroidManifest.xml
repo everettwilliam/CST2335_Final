@@ -18,6 +18,7 @@
 
         <activity
             android:name=".MenuOptionDetailActivity"
+            android:configChanges="orientation|screenSize"
             android:label="stuff"
             android:parentActivityName=".AutoMenuListActivity"
             android:theme="@style/AppTheme.NoActionBar">

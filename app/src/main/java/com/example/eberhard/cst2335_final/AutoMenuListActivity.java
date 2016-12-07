@@ -3,6 +3,7 @@ package com.example.eberhard.cst2335_final;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v7.app.AppCompatActivity;
@@ -35,15 +36,6 @@ public class AutoMenuListActivity extends AppCompatActivity {
         adapter.add();
         cursor = adapter.getRows();
         listView.setAdapter(new AutoMenuCursorAdapter(this, cursor, 0));
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
-            }
-        });
-
-
     }
 
     @Override
@@ -110,14 +102,17 @@ public class AutoMenuListActivity extends AppCompatActivity {
 
             final ListView listView = (ListView)findViewById(R.id.menuListView);
 
-
            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                @Override
                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                    Cursor item = (Cursor)listView.getItemAtPosition(position);
                    String stuff = item.getString(item.getColumnIndex(DbAdapter.OPTION));
-
-                   if(twoPane){
+                   if(stuff.equals("GPS Navigation")){
+                       Uri uri = Uri.parse("geo:45.4215,-75.6972");
+                       Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                       intent.setPackage("com.google.android.apps.maps");
+                       startActivity(intent);
+                   }else if(twoPane){
                        Bundle bundle = new Bundle();
                        bundle.putString(MenuOptionDetailFragment.ITEM_ID,stuff );
                        MenuOptionDetailFragment fragment = new MenuOptionDetailFragment();

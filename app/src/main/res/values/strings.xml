@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Automobile</string>
     <string name="title_activity_menu_option_detail">MenuOptionDetailActivity</string>
+
+    <!-- option_start-->
+    <string name="engine_start">Engine Start</string>
+    <string name="engine_stop">Engine Stop</string>
+    <string name="engine_running">Engine Running</string>
+    <string name="oil">Change Oil!</string>
+    <string name="toolbar_dialog_ok">Drive</string>
+    <string name="toolbar_dialog_cancel">Cancel</string>
+    <string name="toolbar_dialog_message">Enter your estimated milage</string>
+    <string name="alert_message">There is not enough fuel to travel the estimated distance</string>
+    <string name="alert_title">Not enough gas!</string>
+    <string name="ok">Ok</string>
+
+
 </resources>
